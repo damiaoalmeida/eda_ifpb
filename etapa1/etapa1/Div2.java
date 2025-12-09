@@ -17,15 +17,15 @@ public class Div2 {
 		for (int i = 0; i < n.length ; i++) {
 			int valor = div2(n[i]);
 			soma += valor;
-			System.out.println(valor);
+			System.out.println("div(" + n[i] + ") = " + valor);
 		}
 		return soma;
 	}
 
 	public static void main(String[] args) {
-		System.out.println(div2(32));
-//		int array [] = {4, 65, 32, 105};
-//		int resultado = div2Array(array);
-//		System.out.println(resultado);
+//		System.out.println(div2(32));
+		int array [] = {4, 65, 32, 105};
+		int resultado = div2Array(array);
+		System.out.println(resultado);
 	}
 }

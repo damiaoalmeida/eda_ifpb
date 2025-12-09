@@ -5,7 +5,7 @@ public class PesquisaBinaria {
         int inicio = 0, fim = array.length - 1;
 
         while (inicio <= fim) {
-            int meio = inicio + (fim - inicio) / 2;
+            int meio = (inicio + fim) / 2;
 
             if (array[meio] == valor) {
                 return meio; // Elemento encontrado
@@ -20,7 +20,7 @@ public class PesquisaBinaria {
 
     public static void main(String[] args) {
         int[] numeros = {2, 5, 8, 12, 16, 23, 38, 56, 72, 91};
-        int valorBuscado = 23;
+        int valorBuscado = 50;
         
         int resultado = buscaBinaria(numeros, valorBuscado);
         if (resultado != -1) {

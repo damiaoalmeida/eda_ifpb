@@ -63,10 +63,10 @@ public class QuickSortLomuto {
 
     // Método principal para testar o algoritmo
     public static void main(String[] args) {
-    	int [] array = RandomArrayGenerator.generateUniqueRandomArray(100);
-    	printArray(array, -1);
+//    	int [] array = RandomArrayGenerator.generateUniqueRandomArray(100);
+//    	printArray(array, -1);
 
-//      int[] array = {8, 3, 1, 7, 0, 10, 2};
+      int[] array = {8, 3, 1, 7, 0, 10, 2};
         System.out.println("Array original:");
         printArray(array, -1);
 
