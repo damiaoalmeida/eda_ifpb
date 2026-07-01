@@ -66,11 +66,11 @@ public class EDAListaEstatica implements EDAListaIF{
 			return 0;
 
 		int lixo = array[i];
-		if (i != quantidade - 1) {
+//		if (i != quantidade - 1) {
 			for (int j = i; j < quantidade - 1; j++) {
 				array[j] = array[j+1];
 			}
-		}
+//		}
 		quantidade--;
 		return lixo;
 	}

@@ -15,4 +15,20 @@ public class Teste {
 		}
 
 	}
+	
+	public static void sort(int arr[]) {
+		int i = 0;
+		while (i < arr.length) {
+			int menor = i;
+			
+			for(int j = i; j < arr.length; j++) {
+				if(arr[menor] > arr[j])
+					menor = j;
+			}
+			int temp = arr[i];
+			arr[i] = arr[menor];
+			arr[menor] = temp;
+			i++;
+		}
+	}
 }
